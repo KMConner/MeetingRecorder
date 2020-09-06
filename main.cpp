@@ -54,7 +54,7 @@ int main(int argc, char *argv[])
 
 	signal(SIGINT, stop);
 
-	linphone_core_enable_logs(NULL); /*enable liblinphone logs.*/
+	//linphone_core_enable_logs(NULL); /*enable liblinphone logs.*/
 	/* 
 	 Fill the LinphoneCoreVTable with application callbacks.
 	 All are optional. Here we only use the call_state_changed callbacks
@@ -65,7 +65,7 @@ int main(int argc, char *argv[])
 	/*
 	 Instanciate a LinphoneCore object given the LinphoneCoreVTable
 	*/
-	lc = linphone_core_new(&vtable, "/home/koki/git/linphone-test/linphonerc", NULL, NULL);
+	lc = linphone_core_new(&vtable, "/home/koki/git/MeetingRecorder/linphonerc", NULL, NULL);
 
 	if (dest)
 	{
